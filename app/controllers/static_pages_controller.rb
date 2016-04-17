@@ -6,7 +6,4 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def myaction
-    render text: "This is My World in Atom"
-  end
 end
