@@ -18,5 +18,10 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
     assert_select "title" , "About | Ruby on Rails Tutorial"
   end
+  test "should get Contact" do
+    get :contact
+    assert_response :success
+    assert_select "title" , "Contact | Ruby on Rails Tutorial"
+  end
 
 end
